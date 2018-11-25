@@ -1,5 +1,5 @@
 ## LoftSchool example project
-
+# for VK
 ### Доступные команды
 
 * `npm install` - установить зависимости
