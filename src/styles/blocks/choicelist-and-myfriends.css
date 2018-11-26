@@ -1,0 +1,4 @@
+.choicelist, .myfriends {
+  display: flex;
+  flex-flow: column;
+}

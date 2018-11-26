@@ -11,6 +11,9 @@ import './styles/blocks/header.css';
 import './styles/blocks/search.css';
 import './styles/blocks/friends.css';
 import './styles/blocks/footer.css';
+import './styles/blocks/list.css';
+import './styles/blocks/choicelist-and-myfriends.css';
+
 
 //including templates
 
@@ -19,11 +22,7 @@ import './styles/blocks/footer.css';
 import { dnd, examplepublic } from './js/dnd';
 import { ApiVk } from './js/ApiVk'; 
 
-
-
-
-
-
+//void js
 dnd();
 examplepublic();
 ApiVk();
