@@ -1,24 +1,29 @@
-// including styles
-import './style/index.css';
+// including base styles
+import './styles/layout/base.css';
+import './styles/index.css';
+import './styles/layout/fonts.css';
+
+//including blocks styles
+import './styles/blocks/logo.css';
+import './styles/blocks/friends-container.css';
+import './styles/blocks/friendsfilter.css';
+import './styles/blocks/header.css';
+import './styles/blocks/search.css';
+import './styles/blocks/friends.css';
+import './styles/blocks/footer.css';
 
 //including templates
-import render from './templates/friends.hbs';
+
 
 //including js
-import { dnd, examplepublic } from './js/dnd'; 
+import { dnd, examplepublic } from './js/dnd';
+import { ApiVk } from './js/ApiVk'; 
 
-console.log('index works');
 
-const container = document.querySelector('.container');
 
-const items = [
-  {name: 'gsg',  lastname: 'lasr'},
-  {name: 'sdds',  lastname: 'sdad'},
-  {name: 'gqeqwe',  lastname: 'lasdasdr'},
 
-];
 
-container.innerHTML = render({items});
 
 dnd();
 examplepublic();
+ApiVk();
