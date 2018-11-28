@@ -4,7 +4,7 @@ import render from '../templates/friends.hbs';
 function ApiVk() {
 
   const myfriends = document.querySelector('.myfriends');
-  //const choicelist = document.querySelector('.choicelist');
+  const choicelist = document.querySelector('.choicelist');
 
   function auth () {
 
@@ -45,7 +45,29 @@ function ApiVk() {
     .then(() => callAPI ('friends.get', {fields: 'photo_50' , order: 'random'}))
     .then( response => {
       myfriends.innerHTML = render(response);
-    } )
+
+      return new Promise((resolve) => {
+        if (localStorage.data) {
+          const loadOfStorage = JSON.parse(localStorage.data);
+          resolve(loadOfStorage);
+        }
+    });
+    })
+    .then((loadOfStorage) => {
+
+      for (let foo in loadOfStorage) {
+
+          const result = document.getElementById(loadOfStorage[foo]);
+          result.lastElementChild.setAttribute('class', 'list__remove');
+          result.lastElementChild.setAttribute('src', '/src/images/cross.png');
+
+          choicelist.appendChild(result);
+      }
+
+  })
+  
+
+
    
 }
 

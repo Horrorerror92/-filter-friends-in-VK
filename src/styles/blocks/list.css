@@ -31,7 +31,7 @@
   line-height: 5em;
 }
 
-.list__add {
+.list__add, .list__remove {
   position: absolute;
   width: 16px;
   height: 16px;

@@ -19,10 +19,15 @@ import './styles/blocks/choicelist-and-myfriends.css';
 
 
 //including js
-import { dnd, examplepublic } from './js/dnd';
+import { dnd } from './js/dnd';
 import { ApiVk } from './js/ApiVk'; 
+import { addButton } from './js/addButton';
+import { removeButton }  from './js/removeButton';
+import { SaveInlocalStorage } from './js/SaveInlocalStorage';
 
 //void js
 dnd();
-examplepublic();
 ApiVk();
+addButton();
+removeButton();
+SaveInlocalStorage();
