@@ -65,12 +65,8 @@ function ApiVk() {
       }
 
   })
-  
-
-
    
 }
-
 
 export {
   ApiVk
