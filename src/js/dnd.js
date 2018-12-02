@@ -12,7 +12,6 @@ function dnd() {
     zones.forEach(zone => {
       zone.addEventListener('dragstart', (e) => {
         currentDrag = { source: zone, node: e.target };
-       console.log(y);
       });
 
       zone.addEventListener('dragover', (e) => {
