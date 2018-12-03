@@ -1,5 +1,39 @@
-<h1>Friends Filter Test</h1>  
+<div class="container friendsfilter">
+  <div class = "logo">
+    <img class = "logo__img" src="/src/images/Group 2.png" alt = "Другофильтр"> 
+  </div>  
+    <div class="friends-container">
+      <header class="header">
+        <div class="header__top">
+          <h2 class="header__tittle">Выберите друзей</h2>
+          <button class="header__button"></button>
+        </div>
+        <div class="header__bottom">
+          <form class="search" action="">
+            <div class="search__row">
+              <input class="search__input input--left" type="text" placeholder="Начните вводить имя друга">
+            </div>
+            <div class="search__row">
+              <input class="search__input input--right" type="text" placeholder="Начните вводить имя друга">
+            </div>
+          </form>
 
-<div class="container">
-  
+        </div>
+      </header>
+      <div class="friends">
+        <div class="friends__col">
+          <span class="friends__text">Ваши друзья</span>
+          <ul id="myfriends" class="myfriends"></ul>          
+
+        </div>
+        <div class="friends__col">
+          <span class="friends__text">Друзья в списке</span>
+          <ul class="choicelist" id="choicelist"></ul>
+        </div>
+      </div>
+      <footer class="footer">
+        <button class="footer__button">Сохранить</button>
+      </footer>
+
+    </div>
 </div>

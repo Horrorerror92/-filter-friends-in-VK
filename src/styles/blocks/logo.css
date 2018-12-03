@@ -1,0 +1,8 @@
+.logo {
+  display: flex;
+  /* position: absolute; */
+  justify-content: center;
+  margin-top: 85px;
+  margin-bottom: 20px;
+}
+

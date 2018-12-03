@@ -1,5 +1,8 @@
 {{#each items}}
-<div class="name">
-  {{name}} {{lastname}}
-</div>
+<li class="list__friend" id="{{ id }}" draggable="true">
+        <img class="list__avatar" src="{{photo_50}}" alt="аватар" draggable="false">
+        <div class="list__initials" draggable="false">{{first_name}}  {{last_name}}</div>
+        <img class="list__add" src="/src/images/add.png" alt="добавить в список" draggable="false">
+    </li>
+
 {{/each}}

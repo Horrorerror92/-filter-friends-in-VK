@@ -1,0 +1,9 @@
+.choicelist, .myfriends {
+  display: flex;
+  flex-flow: column;
+}
+
+.choicelist {
+  min-width: 100%;
+  min-height: 100%;
+}

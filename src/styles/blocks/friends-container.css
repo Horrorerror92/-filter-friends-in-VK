@@ -1,0 +1,10 @@
+.friends-container {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  width: 620px;
+  height: 490px;
+  background-color: white; 
+  border-radius: 10px;
+  margin: 0 auto 0 auto;
+}
