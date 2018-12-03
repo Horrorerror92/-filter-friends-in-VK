@@ -7,7 +7,7 @@ function addButton() {
     if(event.target.getAttribute('class') === 'list__add'){
       event.target.setAttribute('class', 'list__remove');
       event.target.setAttribute('src', '/src/images/cross.png');
-      choicelist.appendChild(event.target.parentNode);      
+      choicelist.appendChild(event.target.parentNode);    
     }
   })
 }

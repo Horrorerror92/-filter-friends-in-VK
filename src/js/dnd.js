@@ -12,24 +12,27 @@ function dnd() {
     zones.forEach(zone => {
       zone.addEventListener('dragstart', (e) => {
         currentDrag = { source: zone, node: e.target };
+        e.dataTransfer.setData('Text', e.target.getAttribute('id'));
       });
 
       zone.addEventListener('dragover', (e) => {
         e.preventDefault();
       });
 
-      zone.addEventListener('drop', (e) => {    
+      zone.addEventListener('drop', (e) => { 
+        const takeId = e.dataTransfer.getData('Text');
+        const currentElemButton = document.getElementById(takeId).children[2];
         if (currentDrag) {
           e.preventDefault();
-            zone.insertBefore(currentDrag.node, zone.lastElementChild);
-           // const imgElem = document.getElementById(takeId).children[2];
+          
+            zone.insertBefore(currentDrag.node, zone.nextElementSibling);
             if(e.currentTarget.classList.contains('choicelist')) {
-            //  imgElem.setAttribute('class', 'list__remove');
-            //  imgElem.setAttribute('src', '/src/images/cross.png');              
+              currentElemButton.setAttribute('class', 'list__remove');
+              currentElemButton.setAttribute('src', '/src/images/cross.png');              
               } 
             else if (e.currentTarget.classList.contains('myfriends')){
-            //  imgElem.setAttribute('class', 'list__add');
-            //  imgElem.setAttribute('src', '/src/images/add.png');
+              currentElemButton.setAttribute('class', 'list__add');
+              currentElemButton.setAttribute('src', '/src/images/add.png');
               }
          currentDrag = null;
         }
