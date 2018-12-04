@@ -1,0 +1,14 @@
+/* layout */
+@import url(/src/styles/layout/base.css);
+@import url(/src/styles/layout/fonts.css);
+
+/* blocks */
+@import url(/src/styles/blocks/logo.css);
+@import url(/src/styles/blocks/friends-container.css);
+@import url(/src/styles/blocks/friendsfilter.css);
+@import url(/src/styles/blocks/header.css);
+@import url(/src/styles/blocks/search.css);
+@import url(/src/styles/blocks/friends.css);
+@import url(/src/styles/blocks/footer.css);
+@import url(/src/styles/blocks/list.css);
+@import url(/src/styles/blocks/choicelist-and-myfriends.css);

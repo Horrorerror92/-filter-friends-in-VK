@@ -10,6 +10,7 @@ function SaveInlocalStorage () {
       friendsInObj[i] = choicelist[i].getAttribute('id');
     }
     friendsInStorage.data = JSON.stringify(friendsInObj);
+    alert('Текущий список сохранен');
   })
 }
 
